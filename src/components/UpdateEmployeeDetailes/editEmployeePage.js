@@ -7,7 +7,8 @@ import axios from "axios";
 export const EditEmployeePage =()=>{
 
     //BONUS showing updated below the submit button
-    const [showElement,setShowElement] = React.useState(false)
+    const [showElement,setShowElement] = useState(false)
+    const [cancelClicked,setCancelClicked] = useState(false)
     useEffect(()=>{
             setTimeout(function() {
                 setShowElement(false)
@@ -41,21 +42,12 @@ export const EditEmployeePage =()=>{
             console.log(error.message)
         })
         setShowElement(true)
+        localStorage.setItem("employee",JSON.stringify(personInfo))
     }
 
     //BONUS Resetting all employee data by clicking on cancel (except his id and name)
-    const deleteData = () => {
-        axios.patch('/update_employee', {
-            id:JSON.parse(localStorage.getItem("employee")).id,
-            Address: "",
-            Email: "",
-            Phone: "",
-            MaritalStatus: "",
-            Gender:"",
-            Salary:""
-        }).catch(function (error) {
-            console.log(error.message)
-        })
+    const resetInput = () => {
+        setCancelClicked(true)
     }
 
     return(
@@ -68,16 +60,26 @@ export const EditEmployeePage =()=>{
                     {employeeDetailsNeeded.map(res=>{
                         return(
                             <ul key={res}>
-                                <EmployeeInputContainer category={res} setInfo={setPersonInfo} currInfo={personInfo}/>
+                                <EmployeeInputContainer category={res}
+                                                        setInfo={setPersonInfo}
+                                                        currInfo={personInfo}
+                                                        cancelClicked={cancelClicked}
+                                                        setCancelClicked={setCancelClicked}/>
                             </ul>
                         )
                     })
                     }
                     <button type='submit' className='form-submit-button'>Submit</button>
-                    <button type='button' onClick={deleteData} className='form-cancel-button' placeholder='Cancel'>Cancel</button>
+                    <button type='button' onClick={resetInput} className='form-cancel-button' placeholder='Cancel'>Cancel</button>
                 </form>
                     {showElement?<div>Updated!</div>:<></>}
             </div>
+            <p className='user-current-details'>Address: {JSON.parse(localStorage.getItem("employee")).Address}
+                <br/>  Phone: {JSON.parse(localStorage.getItem("employee")).Phone}
+                <br/> Email: {JSON.parse(localStorage.getItem("employee")).Email}
+                <br/> Gender: {JSON.parse(localStorage.getItem("employee")).Gender}
+                <br/> MaritalStatus: {JSON.parse(localStorage.getItem("employee")).MaritalStatus}
+                <br/>Salary: {JSON.parse(localStorage.getItem("employee")).Salary}</p>
         </div>
     )
 }

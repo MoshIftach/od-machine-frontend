@@ -3,7 +3,7 @@
     flex-flow: column wrap;
     position: absolute;
     height: 80%;
-    width: 400px;
+    width: 800px;
     top: 24%;
     left: 15%;
     margin-top: min(-50px, 5%)x;
@@ -70,4 +70,9 @@
     background-color: gray;
     color: white;
     cursor: pointer;
+}
+
+.user-current-details{
+    line-height:1.5em;
+    margin-left: 80px;
 }
