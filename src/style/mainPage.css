@@ -1,0 +1,28 @@
+.mainpage-main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.account-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: calc(100vh - 300px);
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.98);
+    direction: rtl;
+    overflow-y: scroll;
+    padding: 10px;
+    margin: 80px auto 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.diagram-wrapper{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 280px);
+    width: 450px;
+    padding: 10px;
+    margin: 55px auto 80px;
+}

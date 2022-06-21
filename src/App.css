@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.main-header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #37383f;
+  row-gap: 300px;
+  z-index: 999;
+}
+
+.date-wrapper{
+  position:absolute;
+  top:24px;
+  right:0;
+  color: white;
+  margin-right: 30px;
+}
+
+.main-footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:30px;   /* Height of the footer */
+  background:#37383f;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+

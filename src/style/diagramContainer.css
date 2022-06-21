@@ -1,0 +1,213 @@
+.diagram-main-container{
+    width: 120%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+.who-wins-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.diagram-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    background-color: #ffffff;
+
+}
+
+.winner-side{
+    align-self: flex-end;
+    display: flex;
+    overflow: hidden;
+    flex-direction:column;
+    height: 95%;
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.loser-side{
+    align-self: flex-end;
+    display: flex;
+    overflow: hidden;
+    flex-direction:column;
+    height: 83%;
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.person-1-winner-salary{
+    align-self:flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 0%;
+    height: 16%;
+    width: 100%;
+    color: white;
+    background-color: #2F80ED;
+    border-top: 1px solid white;
+}
+
+.person-1-winner-details{
+    align-self:flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    height: 75%;
+    width: 100%;
+    color: white;
+    background-color: #2F80ED;
+}
+.person-1-winner-sum{
+    align-self:flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    height: 9%;
+    width: 100%;
+    background-color: #ffffff;
+}
+.person-details{
+    margin-top: 10px;
+    margin-bottom: 30%;
+    font-size: 1vw;
+    overflow: hidden;
+}
+.person-salary{
+    margin-top: 3px;
+    margin-bottom: 30%;
+    height: 100%;
+    font-size: 1vw;
+    overflow: hidden;
+}
+.person-2-loser-salary{
+    align-self:flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    height: 18%;
+    width: 100%;
+    color: white;
+    border-top: 1px solid white;
+    background-color: #F2994A;
+}
+.person-2-loser-sum{
+    align-self:flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+.person-2-loser-sum{
+    align-self:flex-end;
+    overflow: hidden;
+    height: 11%;
+    width: 100%;
+    background-color: #ffffff;
+}
+.person-2-loser-details{
+    align-self:flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    height: 71%;
+    width: 100%;
+    color: white;
+    background-color: #F2994A;
+}
+
+.a-header{
+    align-self:center;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 3vh;
+}
+
+.a-header-2-container{
+    align-self: flex-end;
+    height: 69%;
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    flex-direction:column;
+    background-color: #ffffff;
+}
+
+.a-header2-vs{
+    margin-top: 0;
+    align-self:center;
+    overflow: hidden;
+    font-size: 2vw;
+}
+
+.a-header2-salary{
+    margin-top: 0;
+    align-self:center;
+    overflow: hidden;
+    font-size: 0.8vw;
+}
+
+.wrapper-a-header2-vs{
+    display: flex;
+    height: 65%;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.wrapper-a-header2-salary{
+    display: flex;
+    height: 23%;
+    justify-content: center;
+    background-color: #ffffff;
+    border-top: 1px solid black;
+
+}
+.sum-gap-css{
+    display: flex;
+    height: 12%;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.diagram-header-wrapper{
+    height: 50%;
+    background-color: #F2994A;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    padding-top: 5%;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #3767c2;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    margin-top: 5%;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #F2994A;
+}
+
+
+
+

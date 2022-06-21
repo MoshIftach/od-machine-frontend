@@ -1,0 +1,79 @@
+.person-wrapper{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+.person-wrapper:hover > .person-edit-button {
+    display: block;
+}
+
+.button-space-even-div-for-css-purposes-only{
+    width: 60px;
+}
+
+input[type="checkbox"] {
+    margin-top: 18px;
+    margin-right: 10px;
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: currentColor;
+    width: 0.9em;
+    height: 0.9em;
+    border: 0.10em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em gray;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+
+.person-check-box{
+    margin-top:18px;
+}
+.person-edit-button{
+    background-color: white;
+    border: 1px solid gray;
+    color: black;
+    margin-top: 13px;
+    margin-left: 50px;
+    padding: 4px 7px;
+    height: 19px;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-small;
+    transition-duration: 0.4s;
+    display: none;
+    position: absolute;
+}
+
+.person-edit-button:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.person-edit-button:disabled,
+.person-edit-button[disabled]{
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+[aria-disabled="true"] {
+    opacity: 0.5;
+}
+
